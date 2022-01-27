@@ -1,0 +1,15 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Workouts</h1>
+  <h2>Past workouts</h2>
+  <ul>
+    <% workouts.forEach(workout => { %>
+      <li><%= workout.date %></li>
+      <li><%= workout.focus %></li>
+    <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>
